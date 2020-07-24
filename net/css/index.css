@@ -1,0 +1,350 @@
+/* banner图 */
+/* 背景图 */
+#banner{
+    height: 550px;
+    -background: url(../images/banner1.jpg) no-repeat center;
+    position: relative;
+    overflow: hidden;
+}
+/* 内容 */
+#banner .banner-content{
+    width: 450px;
+    height: 210px;
+    background: url(../images/border.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 30;
+}
+#banner .banner-content>h2{
+    font-size: 42px;
+    margin: 40px auto 20px;
+}
+
+
+/* 企业文化 */
+#culture{
+    margin: 28px auto 86px;
+}
+#culture>div{
+    width: 400px;
+    height: 210px;
+    /* padding: 44px 36px 50px;     会受分辨率影响 */
+    text-align: center;
+    line-height: 24px;
+}
+#culture p{ 
+    width: 330px; 
+    margin: 0 auto;
+}
+#culture h5{
+    margin-top: 44px;
+    margin-bottom: 20px;
+}
+/* 背景图 */
+#culture .cul-cont1{
+    background: url(../images/01.jpg) no-repeat;
+}
+#culture .cul-cont2{
+    background: url(../images/02.jpg) no-repeat;
+}
+#culture .cul-cont3{
+    background: url(../images/03.jpg) no-repeat;
+}
+
+
+/* 产品展示 */
+/* 蒙版产品 */
+#proshow .products{
+    width: 600px;
+    margin-top: 14px;
+}
+#proshow .products>li{
+    /* width: 272px;
+    height: 276px; */
+    float: left;
+    margin: 28px 28px 0 0;
+    position: relative;
+}
+/* 蒙版 */
+#proshow .products>li>div{
+    width: 272px;
+    height: 276px;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 蒙版标题 */
+#proshow .products>li>div>h4{
+    font-weight: normal;
+    margin-top: 100px;
+}
+/* 蒙版效果 */
+#proshow .products>li:hover div{
+    display: none;
+}
+/* 大蒙版产品 */
+#proshow .bigpro{
+    /* width: 600px;
+    height: 580px; */
+    margin-top: 42px;
+    position: relative;
+}
+/* 大蒙版产品内容 */
+#proshow .bigpro>div{
+    width: 600px;
+    height: 580px;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#proshow .bigpro>div>h4{
+    margin-top: 220px;
+}
+/* 大蒙版效果 */
+#proshow .bigpro:hover div{
+    display: none;
+}
+/* 大蒙版 更多 */
+#proshow .bigpro>div>a{
+    display: block;
+    width: 138px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 23px;
+    margin: 25px auto 0;
+}
+
+
+/* 关于我们 */
+#aboutus{
+    height: 510px;
+    background: #f3f3f3 url(../images/banner3.jpg) no-repeat center;
+    margin: 50px 0 60px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#aboutus h2:after{
+    content: '';
+    display: block;
+    width: 54px;
+    height: 5px;
+    margin: 10px auto 0;
+    background: #15bded;
+    
+}
+#aboutus p{
+    width: 680px;
+    /* height: 190px; */
+    margin: 24px auto 30px;
+}
+#aboutus a{
+    display: block;
+    width: 155px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background: #25bbce;
+    border-radius: 23px;
+    margin: 0 auto;
+}
+
+
+/* 新闻动态 */
+/* 内容块 */
+#news{
+    margin-bottom: 50px;
+}
+
+#news div{
+    width: 380px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+#news div:last-child{ margin-right: 0; }
+#news>div>ul>li{
+    border-bottom: 3px solid #ddd;
+}
+
+
+/* =================================================================================== */
+
+
+
+/* 在线客服 */
+
+#online{
+
+    width: 50px;
+    height: 200px;
+
+    position: fixed;
+    left: 50%;
+    margin-left: 620px ;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+#online a{
+    width: 50px;
+    height: 50px;
+    background: url('../images/bg.png') no-repeat; 
+    /* position: relative; */
+    float: left; 
+}
+
+#online a.icon2{ background-position-y: -50px;}
+#online a.icon3{ background-position-y: -100px;}
+#online a.icon4{ background-position-y: -150px;}
+
+#online a span{
+    width: 150px;
+    height: 50px;
+    color: #f3f3f3;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    left: -150px;
+    background-color: #007bf9;
+    display: none;
+}
+
+#online .rTop{
+    display: none;
+}
+
+
+
+
+/* 模态框 */
+#loginbox{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+
+/* 登录框 */
+#loginbox .login-cont{
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+#loginbox .login-t{
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
+
+#loginbox div{
+    margin: 30px 0;
+    padding: 0 10px;
+    position: relative;
+}
+
+#loginbox div .del-user,
+#loginbox div .change-pwd{
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: none;
+}
+
+#loginbox .userMsg,
+#loginbox .pwdMsg{
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    -display: block;
+    text-indent: 4px;
+    color: red;
+    font-size: 12px;
+}
+
+#loginbox input{
+    text-indent: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    line-height: 1;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 100%;
+}
+
+#loginbox input[type=submit]{
+    text-indent: 0;
+    background: #337ab7;
+    cursor: pointer;
+    color: #fff;
+}
+
+#loginbox .del-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+
+
+/* banner */
+#banner #pic li{
+    -width: 1520px;
+    float: left;
+}
+
+
+#banner #pic{
+    position: absolute;
+}
+
+
+/* 选项卡 新闻动态&关于我们 */
+
+.optTab{
+    float: left;
+    margin-right: 80px;
+}
+
+#news .opt{
+    display: none;
+}
+
+
+/* opt active 显示 */
+#news .active{
+    display: block;
+}
